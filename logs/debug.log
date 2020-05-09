@@ -1,0 +1,13 @@
+2020-05-10 01:38:48,814 [main] INFO  [com.ngh.shadowrocketmac.ShadowrocketmacApplication] StartupInfoLogger.java:55 - Starting ShadowrocketmacApplication on niugehangdembp with PID 43561 (/Users/ushi/Desktop/KuBer/wuShanXian/shadowrocketmac/target/classes started by ushi in /Users/ushi/Desktop/KuBer/wuShanXian/shadowrocketmac)
+2020-05-10 01:38:48,817 [main] INFO  [com.ngh.shadowrocketmac.ShadowrocketmacApplication] SpringApplication.java:651 - No active profile set, falling back to default profiles: default
+2020-05-10 01:38:50,181 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:91 - Tomcat initialized with port(s): 9090 (http)
+2020-05-10 01:38:50,219 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-9090"]
+2020-05-10 01:38:50,220 [main] INFO  [org.apache.catalina.core.StandardService] DirectJDKLog.java:173 - Starting service [Tomcat]
+2020-05-10 01:38:50,221 [main] INFO  [org.apache.catalina.core.StandardEngine] DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/9.0.34]
+2020-05-10 01:38:50,330 [main] INFO  [o.a.c.c.C.[.[localhost].[/ShadowsocksX-NiuGeH]] DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2020-05-10 01:38:50,330 [main] INFO  [org.springframework.web.context.ContextLoader] ServletWebServerApplicationContext.java:284 - Root WebApplicationContext: initialization completed in 1437 ms
+2020-05-10 01:38:50,624 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-10 01:38:51,019 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Starting ProtocolHandler ["http-nio-9090"]
+2020-05-10 01:38:51,061 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:203 - Tomcat started on port(s): 9090 (http) with context path '/ShadowsocksX-NiuGeH'
+2020-05-10 01:38:51,066 [main] INFO  [com.ngh.shadowrocketmac.ShadowrocketmacApplication] StartupInfoLogger.java:61 - Started ShadowrocketmacApplication in 3.05 seconds (JVM running for 7.275)
+2020-05-10 01:39:04,805 [SpringContextShutdownHook] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'applicationTaskExecutor'
