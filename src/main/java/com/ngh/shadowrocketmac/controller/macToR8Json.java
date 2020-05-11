@@ -2,8 +2,13 @@ package com.ngh.shadowrocketmac.controller;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.ngh.shadowrocketmac.common.ResultModel;
+import com.ngh.shadowrocketmac.common.ResultUtils;
+import com.ngh.shadowrocketmac.common.TokenUtils;
+import com.ngh.shadowrocketmac.common.VerifyToken;
 import com.ngh.shadowrocketmac.pojo.IosJson;
 import com.ngh.shadowrocketmac.pojo.MacJson;
+import com.ngh.shadowrocketmac.pojo.UserEntity;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -31,7 +36,17 @@ public class macToR8Json {
 
     Gson gson = new Gson();
 
+    @PostMapping("/login")
+    public ResultModel login(@RequestBody String json, HttpServletRequest request){
+        log.info("IP: {} ",getIpAddress(request));
+        log.info("JSON: {}",json);
+        UserEntity userEntity = gson.fromJson(json, UserEntity.class);
+        String token = TokenUtils.getToken(userEntity.getUserName(), userEntity.getPwd());
+        return ResultUtils.ok(token);
+    }
+
     @PostMapping("/")
+    @VerifyToken
     public Object jsonToJson(@RequestBody String json, HttpServletRequest request){
         log.info("IP: {} ",getIpAddress(request));
         log.info("JSON: {}",json);
